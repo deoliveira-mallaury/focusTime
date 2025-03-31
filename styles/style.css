@@ -43,14 +43,28 @@ header {
     background-color: var(--primary-color);
 
 }
+#menuIcon,
+#closeBtn{
+    background-color: var(--secondary-color);
+    margin: .5em auto;
+    padding: 1em;
+    margin-right: 5%;
+}
+i{
+    background-color: var(--secondary-color);
+    font-size: 2em;
+}
+
 .navbar  {
     width: 70vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content:end;
     align-items: center;
+    margin: auto 1.5em;
     background-color: var(--primary-color);
 }
+
 .navbar__link{
     text-decoration: none;
     margin: .5em;
@@ -58,6 +72,24 @@ header {
     background-color: var(--primary-color);
     font-size: .8em;
 }
+
+.collapseNav {
+    width: 100vw;
+    background-color: var(--secondary-color);
+    font-size: 1.2em;
+    z-index:  2; /* Centers the navigation links */
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 8% 1.5em;
+    padding: 1.5em;
+}
+
+
+
 main{
     background-color: var(--white-color);
 }
@@ -105,7 +137,7 @@ button:hover{
     display: flex;
     padding: .8em;
     margin: auto;
-    width: 90%;
+    width: 80%;
     flex-wrap: wrap;
     justify-content: center;
 }
