@@ -39,8 +39,7 @@ header {
     background-color: var(--primary-color);
 }
 .logo{
-    /* width: 85%; */
-    margin: 0;
+    margin: 1em auto;
     background-color: var(--primary-color);
 
 }
@@ -57,24 +56,21 @@ header {
     margin: .5em;
     color: var(--third-color);
     background-color: var(--primary-color);
-
+    font-size: .8em;
 }
 main{
     background-color: var(--white-color);
 }
 .sectionPres{
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
-    width: 80%;
+    width: 90vw;
     margin: .8em auto;
     padding: 2em auto;
 }
 .sectionPres__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-    margin-top: 69%;
+    padding: .5em;
 }
 .sectionPres__info_txt{
     text-align: center;
@@ -85,18 +81,11 @@ main{
     display: hidden;
 }
 .sectionPres__img {
-    background-image: url(../assets/images/productivity.jpeg);
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: center; 
-    position: absolute;
-    border-radius: 10px;
-    z-index: 0;
-    padding: 0 1em;
+    width: 100%;
 }
- 
-.sectionPres__info .sectionPres__begin{
-    margin: 0 auto;
+.sectionPres__begin {
+    margin: .8em 40%; 
+
 }
 button{
     background-color: var(--fourth-color);
@@ -126,10 +115,10 @@ button:hover{
 .sectionFeatures .sectionFeature__card {
     margin: .5em;
     padding: .1em;
-    width: 42%;
     border: 2px var(--fourth-color) solid;
     border-radius: 10px;
     text-align: center;
+    width: auto;
 }
 
 .sectionFeature__TimeTracker,
@@ -220,7 +209,7 @@ button:hover{
     width: 30%;
 }
 
-@media (min-width: 650px) { 
+@media (min-width: 645px) { 
     header{
         height: 15vh;
 
@@ -231,7 +220,6 @@ button:hover{
     h2,h3{
         font-size: 2em;
     }
-}
 
     .logoSection{
         width: 10%;
@@ -245,6 +233,7 @@ button:hover{
     }
     .sectionPres {
         display: flex; 
+        flex-direction: row;
         justify-content: start; 
         align-items: center; 
         flex-wrap: wrap;
@@ -259,7 +248,7 @@ button:hover{
     .sectionPres__info {
         flex: 1;
         margin: 0; 
-        width: 45%; 
+        width: auto; 
         text-align: start;
         font-size: 1.5em;
 
@@ -278,7 +267,7 @@ button:hover{
     .sectionPres__img {
         flex: 1;
         position: relative; 
-        width: 45%; 
+        /* width: 45%;  */
         text-align: center; 
     }
     
@@ -335,8 +324,6 @@ button:hover{
         margin-top: 1em;
         margin-left: auto;
         font-size: 1.5em;
-
     }
     
-    
-    
+}
